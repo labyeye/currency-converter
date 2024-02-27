@@ -15,7 +15,7 @@ const Start = ({ navigation }) => {
                 <Text style={styles.title}>Rate Radar</Text>
                 <Text style={styles.desc}>"Convert. Compare. Conquer."
                 </Text>
-                <TouchableOpacity style={styles.getbtn} onPress={() => navigation.navigate("Detail")}>
+                <TouchableOpacity style={styles.getbtn} onPress={() => navigation.navigate('Main', { screen: 'Detail' })}>
                     <Text style={{ textAlign: "center", color: 'white', fontWeight: 'bold' }}>Get Started</Text>
                 </TouchableOpacity>
             </View>
